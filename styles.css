@@ -234,15 +234,15 @@
   
   @media(max-width:576px){
     .hero-service-title{
-      padding-top: 50px !important;
+      padding-top: 100px !important;
     }
     .service-icons{
-      margin-top: 85px !important;
+      margin-top: 200px !important;
     }
   }
   @media(max-width:320px){
     .service-icons{
-      margin-top: 130px !important;
+      margin-top: 200px !important;
     }
   }
   .last-section{
