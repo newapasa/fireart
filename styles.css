@@ -354,11 +354,14 @@ ul {
 
 @media (max-width: 767px) {
   .footer-sec {
-    padding-top: 50px;
+    padding-top: 40px !important;
   }
   .footer-top {
     flex-direction: column;
     align-items: center;
+  }
+  .footer-logo {
+    margin-bottom: 20px;
   }
   .show-list-items {
     display: block;
