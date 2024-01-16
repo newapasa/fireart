@@ -353,6 +353,9 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .footer-sec {
+    padding-top: 50px;
+  }
   .footer-top {
     flex-direction: column;
     align-items: center;
