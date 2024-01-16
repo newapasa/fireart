@@ -1,93 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.hero{
-    background-image: url(images/background.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+.hero {
+  background-image: url(images/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
-.nav-item{
-    padding-right: 20px;
+.nav-item {
+  padding-right: 20px;
 }
-.nav-item a{
-    position: relative;
-    color: #000;
+.nav-item a {
+  position: relative;
+  color: #000;
 }
-.nav-item a:after{
-    content: "";
-    position: absolute;
-    background-color: #ff561d;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: 2px;
-    transition: 0.3s;
+.nav-item a:after {
+  content: "";
+  position: absolute;
+  background-color: #ff561d;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 2px;
+  transition: 0.3s;
 }
-.nav-item a:hover::after{
-    width: 100%; 
+.nav-item a:hover::after {
+  width: 100%;
 }
-.btn{
-    background-color: #ff561d;
-    color: #fff;
+.btn {
+  background-color: #ff561d;
+  color: #fff;
 }
-.btn:hover{
-    background-color: #000;
-    color: #fff;
+.btn:hover {
+  background-color: #000;
+  color: #fff;
 }
-.hero-title{
-    padding-top: 180px;
+.hero-title {
+  padding-top: 180px;
 }
-.hero-text
-{
+.hero-text {
   width: 75%;
   height: 100px;
 }
 .change_content:after {
   content: "";
-  animation: changetext 5s step-end infinite alternate
-  ;
+  animation: changetext 5s step-end infinite alternate;
   color: #000;
 }
+
 @keyframes changetext {
-    0% {
-      content: "belive in beautiful software";
-    }
-    20% {
-      content: "need technology to reveal the beauty of products";
-    }
-    35% {
-      content: "needs to build complex projects";
-    }
-    60% {
-      content: "need technology to reveal the beauty of products";
-    }
-    80% {
-      content: "belive in belive in beautiful and smart design";
-    }
-    100% {
-      content: "need technology to reveal the beauty of products";
-    }
+  0% {
+    content: "belive in beautiful software";
   }
-  .hero-list{
-    margin-top: 50px;
+  20% {
+    content: "need technology to reveal the beauty of products";
   }
-.hero-list ul{
+  35% {
+    content: "needs to build complex projects";
+  }
+  60% {
+    content: "need technology to reveal the beauty of products";
+  }
+  80% {
+    content: "belive in belive in beautiful and smart design";
+  }
+  100% {
+    content: "need technology to reveal the beauty of products";
+  }
+}
+.hero-list {
+  margin-top: 50px;
+}
+.hero-list ul {
   list-style: none;
   display: flex;
 }
-.hero-list li a{
+.hero-list li a {
   text-decoration: none;
   color: #000;
   position: relative;
 }
-.hero-list li{
+.hero-list li {
   margin-right: 50px;
 }
-.hero-list a:after{
+.hero-list a:after {
   content: "";
   position: absolute;
   background-color: #ff561d;
@@ -97,213 +96,281 @@
   bottom: -5px;
   transition: 0.3s;
 }
-.hero-list a:hover::after{
-  width: 100%; 
+.hero-list a:hover::after {
+  width: 100%;
 }
 
+.hero-icons {
+  margin-top: 150px;
+}
+.hero-icons ul {
+  list-style: none;
+  display: flex;
+}
+.hero-icons li {
+  text-decoration: none;
+  margin-right: 40px;
+}
+.hero-icons li a {
+  color: #000;
+}
+.hero-icons li a:hover {
+  color: #ff561d;
+}
 
-  .hero-icons{
-    margin-top: 150px;
+@media (min-width: 501px) and (max-width: 1400px) {
+  .hero-title {
+    padding-top: 200px !important;
   }
-  .hero-icons ul{
-    list-style: none;
+  .hero-icons {
+    margin-top: 100px;
+  }
+  .choose-list p {
+    width: 100% !important;
+  }
+  .card-clients {
+    width: 45%;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .hero-icons li{
-    text-decoration: none;
-    margin-right: 40px;
+  .card-clients ul {
+    flex-direction: column;
   }
-  .hero-icons li a{
-    color: #000;
-  }
-  .hero-icons li a:hover{
-    color: #ff561d;
-  }
-  
-  @media(min-width:501px) and (max-width: 1400px) {
-    .hero-title{
-      padding-top: 200px !important;
-    }
-    .hero-icons{
-      margin-top: 100px;
-    }
-    .choose-list p{
-      width: 100% !important;
-    }
-    .card-clients{
-      width: 45%;
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .card-clients ul{
-      flex-direction: column;
-    }
-    .card-clients ul li{
-      margin-bottom: 10px;
-    }
-    .card-clients ul li img{
-      width: 70px;
-    }
-  }
-
-  @media(max-width: 500px) {
-    .hero{
-      height: 100vh;
-    }
-    .hero-title{
-      padding-top: 100px !important; 
-    }
-    .hero-text{
-      width: 90%;
-    }
-    .hero-list ul{
-      flex-direction: column;
-    }
-    .hero-list li{
-    margin-bottom: 5px;
-    }
-    .hero-icons{
-      margin-top: 100px;
-    }
-    .headingP{
-      width: auto;
-    }
-    .choose-list p{
-      width: auto !important;
-    }
-    .card-clients{
-      width: 100%;
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .card-clients ul li img{
-      width: 90px !important;
-    }
-    .card-clients ul li{
-      margin-right: 0px;
-    }
-    .card-clients ul{
-      width: 40%;
-      padding-left: 0;
-      flex-direction: column;
-    }
-  }
-
-  .fire-choose{
-    padding-top: 50px;
-    background-image: url(images/palm-leaf.svg);
-    background-repeat: no-repeat;
-    background-size: 500px;
-    background-position: right calc(100% - 50px);
-  }
-  .headingQ{
-    width: 400px;
-  }
-  .choose-list h1{
-    margin-top: 10px;
+  .card-clients ul li {
     margin-bottom: 10px;
-    font-size: 25px;
   }
-  .choose-list p{
-    width: 60%;
+  .card-clients ul li img {
+    width: 70px;
   }
-  .client .card{
-    margin-top: 20px;
-  }
+}
 
-  .card-clients ul{
-    list-style: none;
-    display: flex;
-  }
-  .card-clients ul li{
-    margin-right: 55px;
-  }
-  .card-clients ul li img{
-    width: 120px;
-  }
-  @media(max-width:768px){
-    .hero-service-title{
-      padding-top: 100px !important;
-    }
-    .service-icons{
-      margin-top: 25px !important;
-    }
-  }
-  
-  @media(max-width:576px){
-    .hero-service-title{
-      padding-top: 100px !important;
-    }
-    .service-icons{
-      margin-top: 200px !important;
-    }
-  }
-  @media(max-width:320px){
-    .service-icons{
-      margin-top: 200px !important;
-    }
-  }
-  .last-section{
-    /* margin-bottom: 40px; */
-    padding-top: 50px;
-    padding-bottom:50px;
-    background-image: url(images/palm-leaf.svg);
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: right calc(90% - 10px);
-  }
-  .last-content a{
-    color: #ff561d;
-  }
-  .hero-services{
-    width: 100%;
+@media (max-width: 500px) {
+  .hero {
     height: 100vh;
   }
-  .hero-service-title{
-    display: flex;
-    padding-top: 180px;
+  .hero-title {
+    padding-top: 100px !important;
   }
-.hero-service-text
-{
+  .hero-text {
+    width: 90%;
+  }
+  .hero-list ul {
+    flex-direction: column;
+  }
+  .hero-list li {
+    margin-bottom: 5px;
+  }
+  .hero-icons {
+    margin-top: 100px;
+  }
+  .headingP {
+    width: auto;
+  }
+  .choose-list p {
+    width: auto !important;
+  }
+  .card-clients {
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-clients ul li img {
+    width: 90px !important;
+  }
+  .card-clients ul li {
+    margin-right: 0px;
+  }
+  .card-clients ul {
+    width: 40%;
+    padding-left: 0;
+    flex-direction: column;
+  }
+}
+
+.fire-choose {
+  padding-top: 50px;
+  background-image: url(images/palm-leaf.svg);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: right calc(100% - 50px);
+}
+.headingQ {
+  width: 400px;
+}
+.choose-list h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.choose-list p {
+  width: 60%;
+}
+.client .card {
+  margin-top: 20px;
+}
+
+.card-clients ul {
+  list-style: none;
+  display: flex;
+}
+.card-clients ul li {
+  margin-right: 55px;
+}
+.card-clients ul li img {
+  width: 120px;
+}
+@media (max-width: 768px) {
+  .hero-service-title {
+    padding-top: 100px !important;
+  }
+  .service-icons {
+    margin-top: 25px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-service-title {
+    padding-top: 100px !important;
+  }
+  .service-icons {
+    margin-top: 200px !important;
+  }
+}
+@media (max-width: 320px) {
+  .service-icons {
+    margin-top: 20git0px !important;
+  }
+}
+.last-section {
+  /* margin-bottom: 40px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(images/palm-leaf.svg);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: right calc(90% - 10px);
+}
+.last-content a {
+  color: #ff561d;
+}
+.hero-services {
+  width: 100%;
+  height: 100vh;
+}
+.hero-service-title {
+  display: flex;
+  padding-top: 180px;
+}
+.hero-service-text {
   width: 75%;
   height: 100px;
 }
-  .hero-service-img img{
-    width: 200px;
-  }
-  @media(max-width:320px){
-    .hero-service-img img{
-      width: 150px !important;
-    }
+.hero-service-img img {
+  width: 200px;
 }
-  .service-list{
-    background-color: #f3f3f3;
-    width: 100%;
+@media (max-width: 320px) {
+  .hero-service-img img {
+    width: 150px !important;
   }
-  .service-list-1
-  {
-    padding: 20px;
+}
+.service-list {
+  background-color: #f3f3f3;
+  width: 100%;
+}
+.service-list-1 {
+  padding: 20px;
+}
+.service-list-1 h1 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.service-content {
+  background-color: #fff;
+  padding: 30px;
+  height: 100%;
+  border-radius: 2%;
+}
+.service-content img {
+  width: 80px;
+}
+.service-btn a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+}
+.service-btn a:hover {
+  color: #ff561d;
+}
+
+.footer-sec {
+  padding-top: 100px;
+  background: #f3f3f3;
+}
+.footer-top {
+  display: flex;
+  width: 100%;
+  /* padding-top: 15px; */
+  justify-content: space-between;
+}
+.block-heading {
+  font-weight: 600;
+  line-height: 29.5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.details {
+  min-width: 235px;
+}
+.list-head {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.hide-lists {
+  display: none;
+}
+
+.block-list ul li {
+  cursor: pointer;
+}
+
+.down-icon {
+  display: none;
+}
+.footer-bottom {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.footer-bottom p {
+  text-align: center;
+  color: #626262;
+}
+
+@media (max-width: 767px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
   }
-  .service-list-1 h1{
-    margin-top: 10px;
-    margin-bottom: 40px;
+  .show-list-items {
+    display: block;
   }
-  .service-content{
-    background-color: #fff;
-    padding: 30px;
-    height: 100%;
-    border-radius: 2%;
+  .block {
+    width: 60%;
   }
-  .service-content img{
-    width: 80px;
+  .block-heading {
+    display: flex;
+    justify-content: space-between;
   }
-  .service-btn a{
-    font-size: 18px;
-    text-decoration: none;
-    color: #000;
+  .down-icon {
+    display: block;
   }
-  .service-btn a:hover{
-    color: #ff561d;
+  .hide-list-items {
+    display: none;
   }
+}
